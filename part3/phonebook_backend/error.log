@@ -1,0 +1,49 @@
+Scanning source code
+Detected a [32mNodeJS[0m app
+Creating app in C:\Users\topia\Documents\GitHub\Fullstack-open-part3\part3\phonebook_backend
+We're about to launch your NodeJS app on Fly.io. Here's what you're getting:
+
+Organization: topiasojanen@gmail.com              (fly launch defaults to the personal org)
+Name:         phonebook-backend-falling-pine-6528 (generated)
+Region:       Stockholm, Sweden                   (this is the fastest region for you)
+App Machines: shared-cpu-1x, 1GB RAM              (most apps need about 1GB of RAM)
+Postgres:     <none>                              (not requested)
+Redis:        <none>                              (not requested)
+Tigris:       <none>                              (not requested)
+
+Created app 'phonebook-backend-falling-pine-6528' in organization 'personal'
+Admin URL: https://fly.io/apps/phonebook-backend-falling-pine-6528
+Hostname: phonebook-backend-falling-pine-6528.fly.dev
+installing: npm install @flydotio/dockerfile@latest --save-dev
+
+added 29 packages, and audited 131 packages in 3s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+     create  Dockerfile
+Wrote config file fly.toml
+
+Watch your deployment at https://fly.io/apps/phonebook-backend-falling-pine-6528/monitoring
+
+Provisioning ips for phonebook-backend-falling-pine-6528
+  Dedicated ipv6: 2a09:8280:1::52:4abf:0
+  Shared ipv4: 66.241.124.179
+  Add a dedicated ipv4 with: fly ips allocate-v4
+
+This deployment will:
+ * create 2 "app" machines
+
+> Launching new machine
+No machines in group app, launching a new machine
+> Machine 2871ed6b550d58 [app] was created
+✔ Machine 2871ed6b550d58 [app] update finished: success
+Creating a second machine to increase service availability
+✔ Machine 683020ef642758 [app] was created
+✔ Machine 683020ef642758 [app] update finished: success
+
+NOTE: The machines for [app] have services with 'auto_stop_machines = "stop"' that will be stopped when idling
+
+
+Visit your newly deployed app at https://phonebook-backend-falling-pine-6528.fly.dev/
