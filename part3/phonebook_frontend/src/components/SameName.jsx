@@ -1,7 +1,7 @@
 
 function sameName(array, name) { 
     return array.some((arrayValue) =>
-      arrayValue.name === name)
+      arrayValue.person_name === name)
   }
   
 
